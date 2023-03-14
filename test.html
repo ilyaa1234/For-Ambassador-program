@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Solanium</title>
+		<link rel="shortcut icon" href="https://www.solanium.io/_nuxt/img/logo.081aa1f.svg" type="image/x-icon">
+		<meta http-equiv="X-UA-Comparible" content="ie=edge">
+	 	<style type="text/CSS">
+
+
+	 	 	body {
+	 	 		padding: 0;
+	 	 		margin: 0;
+	 	 	}
+
+	 	 	.clearfix:after {
+	 	 		content: "";
+	 	 		display: table;
+	 	 		width: 100%;
+	 	 		clear: both;
+	 	 	}
+
+	 	 	header {
+	 	 		background: url(1612216674_174-p-fioletovii-fon-dlya-autro-233.jpg) no-repeat center top / cover;
+	 	 		height: 869px;
+	 	 		width: 100%;
+	 	 	}	
+
+	 	 	.container {
+	 	 		width: 1028px;
+	 	 		margin: 0 auto;
+	 	 	}
+
+	 	 	div {
+	 	 		box-sizing: border-box;
+	 	 	}
+
+	 	 	.logo {
+	 		font-family: Arial, sans-serif;
+	    	letter-spacing:4px;
+	    	color:white;
+	     	padding: 20px;
+	     	float: left;
+	     	}
+
+	     	nav {
+	     		float: right;
+	     		padding: 20px;
+	     	}
+
+	     	.menu {
+	     		padding: 0;
+	     		margin: 0;
+	     		display: block;
+	     		hover 
+	     	}
+
+	     	.menu li {
+	     		float: left;
+	     		display: block;
+	     		margin-right: 41px;
+	     	}
+
+	     	.menu li a {
+	     		font-family: Arial, sans-serif;
+	     		color: #fff;
+	     		text-decoration: none;
+	     		text-transform: uppercase;
+	     		font-size: 14px;
+
+	     	}
+
+	     	.menu li a:hover {
+	     		color: #fff;
+    			opacity: 0.3;
+	     	}
+
+	     	.titles_first {
+	     		
+	     		opacity: .7;
+	     		color: #fff;
+	     		font-size: 40px;
+	     		font-family: Arial, sans-serif;
+	     		text-align: left;
+	     		margin-top: 180px;
+	     	}
+
+	     	h1 {
+	     		font-size: 100px;
+	     		font-family: Arial, sans-serif;
+	     		text-align: left;
+	     		color: #fff;
+	     		margin: 0;
+
+	     	}
+
+	     	.button {
+	     		background: #000000;
+	     		color: #fff;
+	     		text-align: left;
+	     		font-family: Arial, sans-serif;
+	     		font-size: 100px;
+	     		text-decoration: none;
+	     		border-radius: 4px;
+
+	     	}
+
+	     	.cart {
+	     		position: absolute;
+	     		margin: 0 ;
+	     		padding: 0;
+	     		height: 100%;
+	     		width: 100%;
+	     		float: right;
+	     		display: block;
+	     		margin-top: 10px;
+	     		margin-left: 0;
+
+	     	}
+
+	     	section {
+	     		background: #0e0e15;
+	     		height: 1100px;
+	     	}
+
+
+	     	.text {
+	     		color: #fff;
+	     		text-align: right;
+	     		font-family: Arial, sans-serif;
+	     		font-size: 40px;
+	     		text-decoration: none;
+	     		padding-top: 200px;
+	     		padding-left: 400px;
+	     		border-radius: 4px;
+	     	}
+
+	     	.ooo {
+	     		font-size: 25px;
+	     		padding: 5px;
+
+	     	}
+
+	     	.log {
+	     		position: absolute;
+	     		height: 10%;
+	     		float: left;
+	     		margin-top: 70px;
+	     		padding-left: 100px;
+	     	}
+
+	     	.line {
+	     		background: white;
+	     		height: 3px;
+	     		
+	     	}
+
+	     	.pox {
+	     		color: white;
+	     		border-radius: 2px;
+	     	}
+
+	     	.pok {
+	     		color: #fff;
+	     		text-align: center;
+	     		font-size: 30px;
+	     		padding-top: 50px;
+	     		font-family: Arial, sans-serif;
+	     		text-transform: uppercase;
+	     	}
+
+	     	.t {
+	     		color: white;
+	     		text-align: left;
+	     		padding: 40px;
+	     		font-size: 20px;
+	     		font-family: Arial, sans-serif;
+	     		text-transform: uppercase;
+	     		float: left;
+			    letter-spacing: 0.2em;
+			    border: 1px solid;
+			    border-image: linear-gradient(20deg, #f92056 38%, #00deff 65%);
+			    border-image-slice: 1;
+			    width: 300px;
+			    height: 150px;
+	     	}
+
+	     	.tt {
+	     		margin: 50px;
+	     	}
+
+	     	footer {
+	     		background: #0e0e15;
+	     		height: 400px;
+	     		font-family: Arial, sans-serif;
+	     	}
+
+	     	.ii {
+			  animation: move 3s;
+			  -webkit-animation: move 3s;
+			}
+
+			@keyframes move {
+			  from {
+			  margin-left: 100%;
+			  width: 300%;  
+			  }
+
+			  to {
+			  margin-left: 0%;
+			  width: 100%;
+			  }
+			  }
+			   
+			@-webkit-keyframes move {
+			  from {
+			  margin-left: 100%;
+			  width: 300%;  
+			  }
+
+			  to {
+			  margin-left: 0%;
+			  width: 100%;
+			  }
+			}
+
+			.xxx li a {
+				color: white;
+				text-decoration: none;
+				font-size: 15px;
+			}
+
+			.xxx li a:hover {
+				color: white;
+				opacity: 0.4;
+			}
+
+			.xxxx li a {
+				color: white;
+				text-decoration: none;
+				font-size: 15px;
+
+			}
+
+			.xxxx li a:hover {
+				color: white;
+				opacity: 0.4;
+			}
+
+			.market {
+				 list-style-type: none;
+			}
+
+			.info {
+				font-size: 17px;
+				color: white;
+				text-decoration: none;
+			}
+
+			.xxx {
+	     		display: block;
+	     		float: right;
+	     		padding: 10px;
+	     		font-size: 25px;
+			}
+
+			.ss {
+				float: left;
+				margin: 10px;
+				text-decoration: none;
+			}
+
+			.s {
+				margin-top: 15px;
+				text-decoration: none;
+			}
+
+			.logon {
+				float: left;
+				margin-top: 60px;
+			}
+			.x {
+				padding: 10px;
+				color: white;
+				margin-left: 20px;
+				font-size: 25px;
+	     	
+			}
+
+			.xxxx { 
+	     		display: block;
+	     		float: left;
+	     		padding: 10px;
+				text-decoration: none;
+				font-size: 25px;
+			}
+
+			.kon {
+				color: white;
+				opacity: 0.3;
+				text-align: center;
+				padding-top: 100px;
+			}
+
+			.xui {
+				height: 600px;
+			}
+			
+
+	     
+	 	 </style>
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="heading clearfix">
+
+					<div class="logo" width="100%" height="100%">SOLANIUM</div>
+					<nav  id="myList">
+						<ul class="menu " >
+							<li>
+								<a href="vxod.html" class="cvet" id="myList">Вход</a>
+							</li>
+
+							<li>
+								<a href="reg.html" class="cvet">Регистрация</a>
+							</li>
+
+							<li>
+								<a href="#clientinfo" class="hover">Информация</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+				<div class="titles">
+					<div class="titles_first ii">
+						Asset
+					</div>
+					<h1 class="ii">
+						What is
+					</h1>
+				</div>
+				<a href="#clientinfo" class="button">Solana</a>
+			</div>
+		</header>
+		<section>
+			<div class="log">
+			<img src="solanaeptaa.png">
+			</div>
+			<div class="container heading clearfix">
+				<div>
+						<div class="line">
+						</div>
+						<div class="text">
+						Solana - 
+						 <a class="ooo" id="clientinfo"> это перспективная криптовалюта, которая недавно вышла на ICO, успели заработать?  Думаю нет. Но наша команда помогает заработать на криптовалюте даже тем, кто ничего в ней не понимает. <br> Всё просто - регистрируешься, пополняешь баланс, выбираешь на какое время инвестировать свои средства и выводишь профит!</a>
+						</div>
+
+						<div class="pok" >
+							<h2 class="ii">Наши показатели</h2>
+						</div>
+
+						<div class="t">
+							26 инвесторов с России
+						</div>
+
+						<div class="t tt">
+							₽6 млн руб вложенно
+						</div>
+
+						<div class="t">
+							3 месяца успешно работает компания
+						</div>
+				</div>
+			</div>
+			<div class="line">
+			</div>
+		</section>
+		
+		<footer>
+			<div class="container heading clearfix">
+					<div class="logon">
+					<img src="https://www.solanium.io/_nuxt/img/logo.081aa1f.svg">
+					</div>
+				 <nav class="xxx">
+            <h2 class="x"><b>Компания</b></h2>
+            <ul class="market">
+              <li><a href="Chem.html"  style="font-size: 20px;">Чем мы занимаемся?</a></li>
+            </ul>
+          </nav>
+
+          <nav class="xxxx">
+            <h2 class="x"><b>Информация</b></h2>
+            <ul class="market">
+              <li><a href="support.html" style="font-size: 20px;">Условия</a></li>
+              <li><a href="document.html" style="font-size: 20px;">Документация</a></li>
+              <li><a href="FAQ.html" style="font-size: 20px;">FAQ</a></li>
+            </ul>
+          </nav>
+				</div>
+			</div>
+				<div class="kon">
+					<p>Copyright © 2021 | Solanium </p>
+				</div>
+		</footer>
+		<script type="script.js"></script>
+	</body>
+</html>

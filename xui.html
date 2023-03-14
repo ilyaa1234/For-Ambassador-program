@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ru" 
+  
+   
+  
+>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Профиль | Solanium</title>
+    <link rel="shortcut icon" href="https://www.solanium.io/_nuxt/img/logo.081aa1f.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://9a7f6a3c-8431-438c-89d9-90924a59e618.akamaized.net/static/v2/dist/cabinet.1d52582c7f5c.css">
+    <style type="text/css">
+
+
+	 	 	.clearfix:after {
+	 	 		content: "";
+	 	 		display: table;
+	 	 		width: 100%;
+	 	 		clear: both;
+	 	 	}
+
+			.texttt {
+			color: whitesmoke;
+			font-family: Arial, sans-serif;
+			font-size: 20px; 
+			float: right;
+	 	 	background:  #0e0e15;
+			}
+			@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Rubik:700);
+
+.owl-carousel,
+.owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative
+}
+
+.owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 1
+}
+
+.owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden
+}
+
+.owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0)
+}
+
+.owl-carousel .owl-item,
+.owl-carousel .owl-wrapper {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0)
+}
+
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%
+}
+
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+    display: none
+}
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+    display: block
+}
+
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit
+}
+
+.owl-carousel.owl-loading {
+    opacity: 0;
+    display: block
+}
+
+.owl-carousel.owl-hidden {
+    opacity: 0
+}
+
+.owl-carousel.owl-refresh .owl-item {
+    visibility: hidden
+}
+
+.owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.owl-carousel.owl-grab {
+    cursor: move;
+    cursor: grab
+}
+
+.owl-carousel.owl-rtl {
+    direction: rtl
+}
+
+.owl-carousel.owl-rtl .owl-item {
+    float: right
+}
+
+.owl-carousel .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both
+}
+
+.owl-carousel .owl-animated-in {
+    z-index: 0
+}
+
+.owl-carousel .owl-animated-out {
+    z-index: 1
+}
+
+.owl-carousel .fadeOut {
+    animation-name: fadeOut
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.owl-height {
+    transition: height .5s ease-in-out
+}
+
+.owl-carousel .owl-item .owl-lazy {
+    opacity: 0;
+    transition: opacity .4s ease
+}
+
+.owl-carousel .owl-item .owl-lazy:not([src]),
+.owl-carousel .owl-item .owl-lazy[src^=""] {
+    max-height: 0
+}
+
+.owl-carousel .owl-item img.owl-lazy {
+    transform-style: preserve-3d
+}
+
+.owl-carousel .owl-video-wrapper {
+    position: relative;
+    height: 100%;
+    background: #000
+}
+
+.owl-carousel .owl-video-play-icon {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    background: url(../libs/owlcarousel/assets/owl.video.play.png) no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    transition: transform .1s ease
+}
+
+.owl-carousel .owl-video-play-icon:hover {
+    -ms-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3)
+}
+
+.owl-carousel .owl-video-playing .owl-video-play-icon,
+.owl-carousel .owl-video-playing .owl-video-tn {
+    display: none
+}
+
+.owl-carousel .owl-video-tn {
+    opacity: 0;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: opacity .4s ease
+}
+
+.owl-carousel .owl-video-frame {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%
+}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+
+
+
+
+
+
+
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+img {
+    border-style: none
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .owl-nav .owl-next,
+    .owl-nav .owl-prev {
+        top: 80.5%
+    }
+}
+
+@media (min-width: 1340px) {
+    .owl-nav .owl-next,
+    .owl-nav .owl-prev {
+        top: 200px
+    }
+}
+
+.owl-nav .owl-prev {
+    left: 12px
+}
+
+@media (min-width: 768px) {
+    .owl-nav .owl-prev {
+        left: 36px
+    }
+}
+
+.owl-nav .owl-next {
+    right: 12px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+@media (min-width: 768px) {
+    .owl-nav .owl-next {
+        right: 36px
+    }
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 3
+}
+
+.owl-dots .owl-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #FF785B !important;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    outline: 0
+}
+
+.owl-dots .owl-dot + .owl-dot {
+    margin-left: 6px
+}
+
+.owl-dots .owl-dot.active {
+    background-color: #FF785B !important
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+::-webkit-input-placeholder {
+    color: #666;
+    opacity: 1
+}
+
+:-moz-placeholder {
+    color: #666;
+    opacity: 1
+}
+
+::-moz-placeholder {
+    color: #666;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #666;
+    opacity: 1
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+    color: #666
+}
+
+body input:required:valid,
+body textarea:required:valid {
+    color: #666
+}
+
+body,
+html {
+    height: 100%
+}
+
+body {
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.65;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    padding-top: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+@media (min-width: 1170px) {
+    body {
+        padding-top: 60px
+    }
+}
+
+
+
+
+.header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+
+}
+
+.header__inner {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.header__inner:after {
+    content: " ";
+    display: block;
+    clear: both
+}
+
+.header__col {
+    width: 97.91667%;
+    float: left;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 50px
+}
+
+@media (min-width: 1170px) {
+    .header__col {
+        height: 60px
+    }
+}
+
+@media (min-width: 768px) {
+    .header__logo {
+        margin-right: 50px
+    }
+}
+
+.header__logo a img {
+    float: left;
+    width: 140px;
+    height: auto;
+}
+
+.header__logo .desktop {
+    display: none
+}
+
+@media (min-width: 1170px) {
+    .header__logo .desktop {
+        display: inline-block;
+        position: relative;
+        top: 4px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .header__logo .mobile {
+        display: none
+    }
+}
+
+.header__logo .mobile img {
+    width: 70%;
+    height: auto
+}
+
+.header__lang {
+    display: none
+}
+
+@media (min-width: 768px) {
+    .header__lang {
+        display: inline-block
+    }
+}
+
+.header__lang li {
+    list-style: none;
+    float: left;
+    position: relative
+}
+
+.header__lang li + li {
+    margin-left: 21px
+}
+
+.header__lang li + li:after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    margin-top: -8px;
+    width: 1px;
+    height: 16px;
+    background-color: #c4c4c4;
+    opacity: .5
+}
+
+.header__lang li a {
+    color: #fff;
+    opacity: .5;
+    text-decoration: none
+}
+
+.header__lang li.active a {
+    opacity: 1
+}
+
+.header__percent {
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+}
+
+@media (min-width: 1170px) {
+    .header__percent {
+        display: inline-block
+    }
+}
+
+.header__btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #FF785B;
+    background-image: linear-gradient(225deg, #FF785B 0%, #FF2481 100%);
+    -webkit-border-radius: 2px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1;
+    text-align: center;
+    -webkit-transition: color .2s ease-in;
+    -o-transition: color .2s ease-in;
+    transition: color .2s ease-in
+}
+
+@media (min-width: 768px) {
+    .header__btn {
+        padding: 11px;
+        font-size: 15px;
+        min-width: 82px;
+    }
+
+    .header__btn + .header__btn {
+        margin-left: 4px
+    }
+}
+
+.header__btn--reg {
+    background-color: #3ADEE8;
+    background-image: linear-gradient(90deg, #3ADEE8 20%, #1D6EA9 75%);
+}
+
+.header__bank {
+    color: #21c074;
+    margin: 0 30px;
+    font-weight: 600;
+    display: none
+}
+
+@media (min-width: 768px) {
+    .header__bank {
+        display: inline-block
+    }
+}
+
+
+
+.header__home {
+    color: #fff;
+    font-size: 13px;
+}
+
+@media (max-width: 691px) {
+    .header__home {
+        display: inline-flex;
+        -ms-align-items: center;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 4px;
+        background-color: #3ADEE8 !important;
+    }
+}
+
+
+.lll {
+	color: black;
+	text-align: center;
+	font-size: 40px;
+	font-family: Arial, sans-serif;
+	padding: 50px;
+}
+
+.def-input,
+select {
+    width: 100%;
+    height: 42px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 14px;
+    color: #000;
+    padding: 10px;
+    margin-bottom: 10px
+}
+
+.zak {
+	 color: black;
+
+	 font-family: Arial, sans-serif;
+	 line-height: 30px;
+	 padding-top: 30px;
+	 text-align: left;
+	 font-size: 20px;
+	 word-spacing:10px; 
+}
+
+.def-input {
+    width: 100%;
+    height: 42px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 14px;
+    color: #000;
+    padding: 10px;
+    margin-bottom: 10px
+}
+
+.lgg{
+	padding: 10px;
+}
+
+.lggg {
+	padding-top: 20px;
+}
+
+
+.bord {
+	background: black;
+	border:3px #fff  solid;
+	border-radius: 15px;
+	padding: 15px;
+}
+
+
+    </style> 
+</head>
+<body >
+
+        
+
+
+<div class="sidebar" :class="{'sidebar--has-scroll': hasScroll,'sidebar--minimized': minimized, 'sidebar--no-transition': noTransition}" id="sidebar">
+  <div class="sidebar__logo">
+    	
+
+    		<img src="https://www.solanium.io/_nuxt/img/logo.081aa1f.svg" style="width: 50px;"><span style="font-family: Arial, sans-serif; color: white; letter-spacing: 6px; padding: 10px; font-size: 20px;">Solanium</span>
+        	    
+  </div>
+  <div class="sidebar__inner text-white">
+    <div class="sidebar__inner-content">
+      <nav class="sidebar__nav">
+        <ul class="sidebar__nav-group">
+          
+          <ul class="sidebar__nav-list">
+            <li class="sidebar__nav-list-item">
+              <a href="xui.html" class="sidebar__nav-list-link">
+                <svg></svg>
+                <span style="font-family: Arial, sans-serif;">Профиль</span>
+              </a>
+            </li>
+            
+          </ul>
+        </ul>
+
+        <ul class="sidebar__nav-group">
+          <li class="sidebar__nav-group-title" style="font-family: Arial, sans-serif;">Операции</li>
+          <ul class="sidebar__nav-list">
+            <li class="sidebar__nav-list-item">
+              <a href="invest.html" class="sidebar__nav-list-link">
+                <svg></svg>
+                <span style="font-family: Arial, sans-serif;">Инвестировать</span>
+              </a>
+            </li>
+            <li class="sidebar__nav-list-item request-sidebar-link">
+              
+                  <a href="#" class="sidebar__nav-list-link">
+                      <svg></svg>
+                      <span style="font-family: Arial, sans-serif;">Запросить выплату</span>
+                  </a>
+              
+            </li>
+          </ul>
+        </ul>
+
+        
+
+        <ul class="sidebar__nav-group">
+          <li class="sidebar__nav-group-title" style="font-family: Arial, sans-serif;">Прочее</li>
+          <ul class="sidebar__nav-list">
+            <li class="sidebar__nav-list-item">
+              <a href="/ru/overclocking" class="sidebar__nav-list-link">
+                <svg></svg>
+                <span style="font-family: Arial, sans-serif;">Новости</span>
+              </a>
+            </li>
+
+            
+            <li class="sidebar__nav-list-item">
+              <a href="FAQ.html" target="_blank" class="sidebar__nav-list-link">
+                <svg></svg>
+                <span style="font-family: Arial, sans-serif;">FAQ</span>
+              </a>
+            </li>
+            
+           
+    </div>
+  </div>
+</div>
+	
+<header class="header">
+  <div class="header__inner">
+    <div class="header__col">
+      <div class="header__logo">
+
+      </div>
+      <!--<a href="/" class="header__home">
+        <img src="/theme/demo256/assets/common/images/home.svg" alt="home">
+        <span>На главную</span>
+      </a>-->
+      <a href="#" class="header__percent h-percent h-percent--cab">
+        <div class="h-percent__block">
+        </div>
+      </a>
+              <span class="header__bank" style="line-height: 1.25;">
+        <span style="color: #fff;">
+          <span style="color: #fff;">Баланс</span>:
+        </span>
+          0.00 USD        <br>
+        <span style="color: #fff;"></span>
+         <i class="fa fa-usd"></i>      </span>
+      <div class="header__btns">
+        <table>
+          <tr>
+            <td>
+
+
+            </td>
+            <td style="color:#ffffff;">
+              <span style="display: block;font-size: 14px;line-height: 18px">ПОЧТА ЧЕЛА</span>
+              <a style="color: #e21d5c !important;font-size: 14px;display: block;margin: 0;padding: 0;line-height: 18px"
+                 href="test.html">Выход</a>
+            </td>
+          </tr>
+        </table>
+        <!--<a href="/cabinet" class="header__btn header__btn--sign">Инвестировать</a>
+        <a href="/withdrawal" class="header__btn header__btn--reg">Вывести</a>-->
+      </div>
+    </div>
+  </div>
+</header>
+<section>
+	<div class="container">
+		<div class="lll">
+			<p>Мои кошельки</p>
+		</div>
+		<div>
+               	                          
+                      <div class="input_group" >
+              <label>Solana</label>
+                
+                  <input type="text" class="def-input"
+                         name="Solana" placeholder="9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF">
+
+
+  
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="container">
+		<div class="heading clearfix">
+			<div class="zak">
+				<h1 style="padding: 10px;">Как установить Solana кошелёк?</h1>
+				<p>1. Перейдите в Интернет-магазин Chrome и для установки Phantom нажмите «Установить». </p>
+				<br>
+				<p>2. Теперь нажмите «Create New Wallet» (Создать новый кошелек). </p>
+				<br>
+					<div class="lgg">
+					<img src="Phantom3.png">
+					</div>
+				<br>
+				<p>3. Запишите или сохраните «Секретную фразу для восстановления» (Secret Recovery Phrase) в безопасном месте, так как это единственный способ восстановить свой кошелек. Ни при каких обстоятельствах НЕ передавайте эту секретную фразу никому. Это все равно что дать кому-то пароль от вашего банковского счета. </p>
+				<br>
+					<div class="lgg">
+						<img src="Phantom4.png">
+					</div>
+				<br>
+				<div class="bord">
+					<div class="lggg">
+						<span style="color: whitesmoke; opacity: 0.9;"><p>Важно! Выше предоставлены поля для ввода ваших криптовалютных кошельков. Убедительная просьба перепроверять правильность написание кошельков. Ведь из за одной пропущенной буквы вам может не зачислиться баланс в профиле. В случае возникновения таких проблем, просим вас обращаться к нам на почту Solaniumorg@gmail.com.
+						Если по какой то причине, вы хотите пополнить баланс иным способом пополнения из выше перечисленных, то просьба написать нам на почту, где наша команда сможет лично с вами выбрать удобный для вас метод пополнения, и обговорить все условия.</p>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+
+</html>
